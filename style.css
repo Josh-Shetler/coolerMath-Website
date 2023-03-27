@@ -42,3 +42,51 @@ li a:hover {
     margin: 0 auto;
     display: block;
 }
+
+.search-bar {
+    float: right;
+    margin-top: 10px;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-right: 5px;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    /* Increase padding for larger button */
+    font-size: 16px;
+    cursor: pointer;
+    width: 10px;
+    /* Add a width property */
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.nav {
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
