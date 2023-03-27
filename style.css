@@ -1,3 +1,9 @@
+header {
+    text-align: center;
+    background-color: #b6b6b6;
+    padding: 20px;
+}
+
 body {
     background-color: rgb(140, 160, 180);
     display: block;
@@ -12,7 +18,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #202020;
 }
 
 li {
@@ -29,5 +35,10 @@ li a {
 
 li a:hover {
     background-color: rgb(84, 119, 155);
-    color: white;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
