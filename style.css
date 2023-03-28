@@ -31,10 +31,12 @@ li a {
     text-align: center;
     padding: 15px;
     text-decoration: none;
+    transition: transform 0.5s ease;
 }
 
 li a:hover {
     background-color: rgb(84, 119, 155);
+    transform: scale(1.1);
 }
 
 .center {
@@ -70,11 +72,13 @@ li a:hover {
     font-size: 16px;
     cursor: pointer;
     width: 10px;
+    transition: transform 0.5s ease;
     /* Add a width property */
 }
 
 .search-bar button[type="submit"]:hover {
     background-color: #45a049;
+    transform: scale(1.2);
 }
 
 .nav {
