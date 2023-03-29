@@ -11,6 +11,7 @@ const games = [
         name: "Tetroid",
         gamePage: "Tetroid.html"
     },
+
 ];
 
 const container = document.getElementById("games-container");
