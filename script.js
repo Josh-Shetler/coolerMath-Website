@@ -11,6 +11,12 @@ const games = [
         name: "Tetroid",
         gamePage: "Tetroid.html"
     },
+    {
+        src: "Assets/chess.png",
+        title: "Chess",
+        name: "Chess",
+        gamePage: "Chess.html"
+    }
 
 ];
 
