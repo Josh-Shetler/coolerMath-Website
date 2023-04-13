@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Math Games</title>
+    <title>Cooler Math Games</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 
@@ -19,7 +19,7 @@
             </svg>
         </div>
         <button type="button" class="home">
-            <h1>Cool Math Games</h1>
+            <h1>Cooler Math Games</h1>
         </button>
     </header>
     <ul class="nav">
@@ -28,12 +28,15 @@
         <li><a href="sign-in-Page.html">Teacher: Sign in</a></li>
         <li><a href="sign-in-Page.html">Student: Sign in</a></li>
         <div class="search-bar">
-            <form>
-                <input type="text" placeholder="Search...">
-                <button type="submit" class="search-btn">
-                    <img src="Assets/glass.png" alt="Search">
-                </button>
-            </form>
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="text" placeholder="Search..." id="search-input">
+                    <button type="submit" class="search-btn">
+                        <img src="Assets/glass.png" alt="Search">
+                    </button>
+                </form>
+                <div id="search-results" class="center"></div>
+            </div>
         </div>
     </ul>
     <div class="center">

@@ -207,3 +207,8 @@
  .custom-shape-divider-top-1680135876 .shape-fill {
      fill: #444444;
  }
+
+ .Comments {
+     position: relative;
+     display: block;
+ }

@@ -31,3 +31,38 @@ games.forEach(game => {
 
     container.appendChild(button);
 });
+
+function search() {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const query = searchInput.value.trim().toLowerCase();
+
+    // Clear previous results
+    searchResults.innerHTML = '';
+
+    // Filter the games based on the search query
+    const filteredGames = games.filter((game) => game.name.toLowerCase().includes(query));
+
+    // Display the search results
+    for (const game of filteredGames) {
+        const button = document.createElement("button");
+        button.className = "Game";
+
+        button.innerHTML = `
+            <img src="${game.src}" width="150" height="100" title="${game.title}">
+            <h2>${game.name}</h2>
+        `;
+
+        button.addEventListener("click", () => {
+            window.location.href = game.gamePage;
+        });
+
+        searchResults.appendChild(button);
+    }
+}
+
+document.getElementById('search-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    search();
+});
+
