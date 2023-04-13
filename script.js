@@ -1,11 +1,5 @@
 const games = [
     {
-        src: "Assets/Moto.png",
-        title: "Moto",
-        name: "Motorcross",
-        gamePage: "motorcross.html"
-    },
-    {
         src: "Assets/Tetroid.png",
         title: "Tetroid",
         name: "Tetroid",
