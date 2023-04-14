@@ -1,0 +1,20 @@
+[
+    {
+        "src": "Assets/Tetroid.png",
+        "title": "Tetroid",
+        "name": "Tetroid",
+        "gamePage": "Tetroid.html"
+    },
+    {
+        "src": "Assets/chess.png",
+        "title": "Chess",
+        "name": "Chess",
+        "gamePage": "Chess.html"
+    },
+    {
+        "src": "Assets/Hitori.png",
+        "title": "Hitori",
+        "name": "Hitori",
+        "gamePage": "Hitori.html"
+    }
+]
