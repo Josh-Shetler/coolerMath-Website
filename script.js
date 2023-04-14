@@ -10,6 +10,12 @@ const games = [
         title: "Chess",
         name: "Chess",
         gamePage: "Chess.html"
+    },
+    {
+        src: "Assets/",
+        title: "Hitori",
+        name: "Hitori",
+        gamePage: "Hitori.html"
     }
 
 ];
