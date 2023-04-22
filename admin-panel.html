@@ -22,16 +22,19 @@
         <button type="button" class="home">
             <h1>Admin Panel</h1>
         </button>
+        <ul class="nav">
+            <li><a href="CoolMathGames.html">HOME</a>
+            </li>
     </header>
 
-    <div id="admin-status" class="center">
+    <div id="admin-status">
         <p>You are signed in as admin.</p>
         <button id="sign-out-btn">Sign Out</button>
     </div>
 
     <h2 class="center">Assign a Video Lesson:</h2>
     <div class="center">
-        <form id="assign-video-form">
+        <form id="assign-video-form" onsubmit="event.preventDefault(); assignVideo();">
             <label for="video-title">Video Title:</label>
             <input type="text" id="video-title" required>
             <br>
@@ -44,8 +47,7 @@
             <button type="submit">Assign Video</button>
         </form>
     </div>
-    <script src=".js"></script>
-
+    <script src="admin-status.js"></script>
 </body>
 
 </html>

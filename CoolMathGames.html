@@ -24,11 +24,12 @@
             <h1>Cooler Math Games</h1>
         </button>
     </header>
-    <div id="admin-status" style="display: none;">
-        <p>You are signed in as admin.</p>
-        <button id="sign-out-btn">Sign Out</button>
-    </div>
     <ul class="nav">
+        <div id="admin-status" style="display: none;">
+            <p>You are signed in as admin.</p>
+            <button id="sign-out-btn">Sign Out</button>
+            <li><a href="admin-panel.html">ADMIN PAGE</a></li>
+        </div>
         <li><a href="Work.html">Work</a></li>
         <li><a href="leisure.html">Leisure</a></li>
         <li><a href="sign-in-Page.html">Teacher: Sign in</a></li>
@@ -47,13 +48,7 @@
     </ul>
 
     <h2 class="center">Assigned Lessons:</h2>
-    <div id="lessons" class="center">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/grnP3mduZkM"
-            title="Algebra Introduction - Basic Overview - Online Crash Course Review Video Tutorial Lessons"
-            frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
+    <script src="display-assigned-video.js"></script>
 
     <script src="admin-status.js"></script>
 </body>
