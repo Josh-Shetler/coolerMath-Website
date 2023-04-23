@@ -16,9 +16,9 @@ function displayAssignedVideo(videoData) {
     videoTitle.textContent = videoData.title;
     videoDescription.textContent = videoData.description;
     videoFrame.src = videoData.url;
-    videoFrame.width = 560;
+    videoFrame.width = 420;
     videoFrame.height = 315;
-    videoFrame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    videoFrame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     videoFrame.allowFullscreen = true;
 
     videoContainer.appendChild(videoTitle);
