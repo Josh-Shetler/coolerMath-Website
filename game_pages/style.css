@@ -255,4 +255,9 @@
      left: 0;
  }
 
- 
+ .comments-container {
+     display: flex;
+     justify-content: flex-end;
+     flex-direction: column;
+     /* Optional: If you want the comments to stack vertically */
+ }

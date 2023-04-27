@@ -18,29 +18,21 @@
 
     <ul class="nav">
         <li><a href="../CoolMathGames.html">HOME</a></li>
-        <div class="search-bar">
-            <form>
-                <input type="text" placeholder="Search...">
-                <button type="submit" class="search-btn">
-                    <img src="Assets/glass.png" alt="Search">
-                </button>
-            </form>
-        </div>
     </ul>
 
     <div class="game-container">
         <iframe src="http://wanted5games.com/games/html5/chess-mania-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="500" height="609" frameborder="0" scrolling="no"></iframe>
     </div>
-
-    <form method="post" class="Comments">
-        <h1>Add Comment</h1>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="Submit">
-      </form>
-     <form class="Comments">
-        <h1>Fred:</h1>
-        <textarea name="" id="" cols="30" rows="5">This game is mid</textarea>
-     </form> 
+    <div class="center">
+        <form id="comment-form" class="Comments">
+            <h1>Add Comment</h1>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <textarea id="comment-input" name="comment" placeholder="Your comment"></textarea>
+            <button type="submit" id="post-comment-btn">Submit</button>
+        </form>
+        <div id="comments-list"></div>
+    </div>
+    <script src="comments.js"></script>
 </body>
 
 </html>
