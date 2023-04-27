@@ -19,14 +19,15 @@ function signOut() {
 function assignVideo() {
     const videoTitle = document.getElementById('video-title').value;
     const videoDescription = document.getElementById('video-description').value;
-    const videoUrl = document.getElementById('video-url').value;
+    const videoEmbedCode = document.getElementById('video-embed-code').value;
 
-    let videoId = videoUrl.split('v=')[1];
-    const ampersandPosition = videoId.indexOf('&');
-    if (ampersandPosition !== -1) {
-        videoId = videoId.substring(0, ampersandPosition);
+    // Extract the src attribute value from the embed code
+    const srcMatch = videoEmbedCode.match(/src="([^"]+)"/);
+    if (!srcMatch || !srcMatch[1]) {
+        alert('Invalid embed code. Please check and try again.');
+        return;
     }
-    const embedUrl = 'https://www.youtube.com/embed/' + videoId;
+    const embedUrl = srcMatch[1];
 
     const videoData = {
         title: videoTitle,

@@ -8,22 +8,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function displayAssignedVideo(videoData) {
-    const videoContainer = document.createElement('div');
-    const videoTitle = document.createElement('h3');
-    const videoDescription = document.createElement('p');
-    const videoFrame = document.createElement('iframe');
+    const videoContainer = document.getElementById('assigned-video-container');
 
+    const videoTitle = document.createElement('h3');
     videoTitle.textContent = videoData.title;
+
+    const videoDescription = document.createElement('p');
     videoDescription.textContent = videoData.description;
+
+    const videoFrame = document.createElement('iframe');
     videoFrame.src = videoData.url;
     videoFrame.width = 420;
     videoFrame.height = 315;
-    videoFrame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    videoFrame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     videoFrame.allowFullscreen = true;
 
     videoContainer.appendChild(videoTitle);
     videoContainer.appendChild(videoDescription);
     videoContainer.appendChild(videoFrame);
-
-    document.body.appendChild(videoContainer);
 }

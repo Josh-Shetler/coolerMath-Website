@@ -23,14 +23,15 @@
             <h1>Admin Panel</h1>
         </button>
         <ul class="nav">
+            <li>
+                <div id="admin-status">
+                    <p>You are signed in as admin.</p>
+                    <button id="sign-out-btn">Sign Out</button>
+                </div>
+            </li>
             <li><a href="CoolMathGames.html">HOME</a>
             </li>
     </header>
-
-    <div id="admin-status">
-        <p>You are signed in as admin.</p>
-        <button id="sign-out-btn">Sign Out</button>
-    </div>
 
     <h2 class="center">Assign a Video Lesson:</h2>
     <div class="center">
@@ -41,8 +42,8 @@
             <label for="video-description">Video Description:</label>
             <input type="text" id="video-description" required>
             <br>
-            <label for="video-url">Video URL:</label>
-            <input type="url" id="video-url" required>
+            <label for="video-embed-code">Video Embed Code:</label>
+            <textarea id="video-embed-code" required></textarea>
             <br>
             <button type="submit">Assign Video</button>
         </form>
