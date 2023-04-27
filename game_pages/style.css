@@ -261,3 +261,10 @@
      flex-direction: column;
      /* Optional: If you want the comments to stack vertically */
  }
+
+ p {
+     color: #ffffff;
+     display: block;
+     margin: 0;
+     padding: 0;
+ }
